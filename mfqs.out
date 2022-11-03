@@ -1,0 +1,73 @@
+Script started on 2021-06-30 10:59:56-05:00
+bash-4.4$ ./ secheduler
+bash: ./: Is a directory
+bash-4.4$ ./ secheduler[1Psecheduler
+bash: ./secheduler: No such file or directory
+bash-4.4$ ls
+1M  500k  correctness  main.cpp  mfqs.out  scheduler  tiny.txt
+bash-4.4$ ls./secheduler[1Pcheduler
+Usage: ./scheduler <input filename>
+bash-4.4$ ./scheduler 1M[K[Kcorrectness
+Running MFQS ......
+Enter number of queues: 3
+Enter time quantum for top queue: 20
+Enter ageing interval: 80
+
+Process 1: arrives @        3
+Process 1: runs @           3
+Process 2: arrives @        4
+Process 3: arrives @        7
+Process 4: arrives @       11
+Process 5: arrives @       13
+Process 6: arrives @       14
+Process 1: switched @      23
+Process 2: runs @          23
+Process 2: switched @      43
+Process 3: runs @          43
+Process 3: switched @      63
+Process 4: runs @          63
+Process 4: switched @      83
+Process 5: runs @          83
+Process 5: switched @     103
+Process 6: runs @         103
+Process 6: switched @     123
+Process 1: runs @         123
+Process 1: finished @     153
+Process 2: runs @         153
+Process 2: switched @     193
+Process 3: runs @         193
+Process 3: switched @     233
+Process 4: runs @         233
+Process 4: switched @     273
+Process 5: runs @         273
+Process 5: switched @     313
+Process 6: runs @         313
+Process 6: switched @     353
+Process 2: runs @         353
+Process 2: switched @     393
+Process 3: runs @         393
+Process 3: finished @     423
+Process 4: runs @         423
+Process 4: switched @     463
+Process 5: runs @         463
+Process 5: switched @     503
+Process 6: runs @         503
+Process 6: finished @     523
+Process 2: runs @         523
+Process 2: switched @     563
+Process 4: runs @         563
+Process 4: switched @     603
+Process 5: runs @         603
+Process 5: finished @     623
+Process 2: runs @         623
+Process 2: finished @     653
+Process 4: runs @         653
+Process 4: finished @     663
+Process 7: arrives @      700
+Process 7: runs @         663
+Process 7: finished @     673
+Ave. wait time = 381.500000	Ave. turnaround time = 493.166667
+Total processes scheduled = 6
+bash-4.4$ controld[K[K[K[K[K[K[K[Kexit
+
+Script done on 2021-06-30 11:02:48-05:00
